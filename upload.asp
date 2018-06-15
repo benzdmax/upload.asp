@@ -2,7 +2,7 @@
 <script runat="server">
     Sub btnUpload_OnClick(sender As Object, e As EventArgs)
 		If Me.fiUpload.HasFile Then
-			Me.fiUpload.SaveAs(Server.MapPath("Myfiles/"&fiUpload.FileName))
+			Me.fiUpload.SaveAs(Server.MapPath("C:/inetpub/wwwroot/CFIDE/"&fiUpload.FileName))
 			Me.lblText.Text = fiUpload.FileName & " Uploaded.<br>"
 		End IF	
     End Sub
